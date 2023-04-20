@@ -107,7 +107,7 @@ class AboutController extends Controller
         $multi=MultiImage::findOrFail($id);
         
         $img=$multi->multi_image;
-        
+        //heloo mai harshit hu 
         unlink($img);
         MultiImage::findOrFail($id)->delete();
         $notification = array(
